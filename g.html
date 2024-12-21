@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .about {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 15px;
+        }
+        .skills {
+            margin-bottom: 40px;
+        }
+        .skills ul {
+            list-style: none;
+            text-align: center;
+        }
+        .skills li:hover {
+            background-color: #ddd;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin-bottom: 40px;
+        }
+        .project {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 45%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact-info {
+            display: none;
+            margin-top: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Full Name</h1>
+    <p>Web Developer</p>
+</header>
+
+<section class="about">
+    <h2>About Me</h2>
+    <p>Hello! I am a passionate web developer skilled in front-end and back-end development.</p>
+    <img src="YOUR_GOOGLE_DRIVE_IMAGE_LINK" alt="Profile Picture">
+</section>
+
+<section class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Problem Solving</li>
+    </ul>
+</section>
+
+<section class="projects">
+    <div class="project">
+        <h3>Project Alpha</h3>
+        <p>Developed a task management app with React and Firebase, featuring real-time updates and user authentication.</p>
+    </div>
+
+    <div class="project">
+        <h3>Project Beta</h3>
+        <p>Created a personal blog site with responsive design, post filtering, and dynamic content loading.</p>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Me</h2>
+    <button onclick="showContactInfo()">Show Contact Info</button>
+    <div class="contact-info" id="contactDetails">
+        <p>Email: example@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+</section>
+
+<script>
+    function showContactInfo() {
+        document.getElementById('contactDetails').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
