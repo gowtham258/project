@@ -1,0 +1,16 @@
+h1{
+    color: rgb(55, 255, 0);
+}
+
+.heading{
+    border: 10px solid teal;
+    padding: 5px rgb(10, 10, 10);
+    background-color: rgb(197, 192, 255);
+    margin: 90px blue  ;
+    
+
+}
+
+#sub-heading{
+    background-color: rgb(197, 192, 255);
+}
